@@ -1,0 +1,350 @@
+<link href="dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/jquery-1.11.1.min.js"></script>
+
+<script language="javascript">
+    function calcular()
+    {
+        var nota1, nota2, nota3, nota4, media;
+        nota1  = frmMedia.txtNota1.value;
+        nota2  = frmMedia.txtNota2.value;
+        nota3  = frmMedia.txtNota3.value;
+        nota4  = frmMedia.txtNota4.value;
+        nota5  = frmMedia.txtNota5.value;
+        nota6  = frmMedia.txtNota6.value;
+        nota7  = frmMedia.txtNota7.value;
+        nota8  = frmMedia.txtNota8.value;
+        nota9  = frmMedia.txtNota9.value;
+        nota10 = frmMedia.txtNota10.value;
+        nota11 = frmMedia.txtNota11.value;
+        nota12 = frmMedia.txtNota12.value;
+
+        nota1  = parseFloat(nota1);
+        nota2  = parseFloat(nota2);
+        nota3  = parseFloat(nota3);
+        nota4  = parseFloat(nota4);
+        nota5  = parseFloat(nota5);
+        nota6  = parseFloat(nota6);
+        nota7  = parseFloat(nota7);
+        nota8  = parseFloat(nota8);
+        nota9  = parseFloat(nota9);
+        nota10 = parseFloat(nota10);
+        nota11 = parseFloat(nota11);
+        nota12 = parseFloat(nota12);
+
+        media = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6 + nota7 + nota8 + nota9 + nota10 + nota11 + nota12)/12;
+        frmMedia.txtMedia.value = media;
+    }
+</script>
+
+<div class="container">
+<br>
+	<h5><b>Profissional</b></h5>
+    <code class="highlighter-rouge">Preencha os campos Profissional com uma nota de 0 a 10 e clique em Calcular Media</code>
+
+	<hr>
+
+    <form name ="frmMedia" class="form-inline" action="observacoes.html" method="post">
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp1" class="sr-only">Competência 1</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp1" value="Competencia 1">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota1" class="form-control" id="comp1valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp1valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp2" class="sr-only">Competência 2</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp2" value="Competencia 2">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota2" class="form-control" id="comp2valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp2valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp3" class="sr-only">Competência 3</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp3" value="Competencia 3">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota3" class="form-control" id="comp3valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp3valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp4" class="sr-only">Competência 4</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp4" value="Competencia 4">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota4" class="form-control" id="comp4valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp4valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp5" class="sr-only">Competência 5</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp5" value="Competencia 5">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota5" class="form-control" id="comp5valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp5valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp6" class="sr-only">Competência 6</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp6" value="Competencia 6">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota6" class="form-control" id="comp6valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp6valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp7" class="sr-only">Competência 7</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp7" value="Competencia 7">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota7" class="form-control" id="comp7valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp7valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp8" class="sr-only">Competência 8</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp8" value="Competencia 8">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota8" class="form-control" id="comp8valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp8valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp9" class="sr-only">Competência 9</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp9" value="Competencia 9">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota9" class="form-control" id="comp9valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp9valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp10" class="sr-only">Competência 10</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp10" value="Competencia 10">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota10" class="form-control" id="comp10valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp10valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp11" class="sr-only">Competência 11</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp11" value="Competencia 11">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota11" class="form-control" id="comp11valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp11valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="comp12" class="sr-only">Competência 12</label>
+            <input type="text" readonly class="form-control-plaintext" id="comp12" value="Competencia 12">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtNota12" class="form-control" id="comp12valor1" placeholder="Profissional" required>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="comp12valor" placeholder="Gestor">
+        </div>
+    </div>
+
+    <hr class="col-md-11">
+
+    <div class="alert alert-danger" role="alert">
+
+    <button type="button" class="btn btn-danger" onclick="javascript:calcular();">CALCULAR MEDIA</button>
+
+    <hr class="col-md-11">
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="media" class="sr-only">Media</label>
+            <input type="text" readonly class="form-control-plaintext" id="media" value="Media">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" name="txtMedia" class="form-control" id="txtMedia" placeholder="Profissional">
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="media1valor" placeholder="Gestor">
+        </div>
+    </div>
+    
+    </div>
+
+    <hr class="col-md-11">
+
+    <div class="row">
+        <div class="form-group mb-1">
+            <label for="evolucao" class="sr-only">Evolucao Desempenho</label>
+            <input type="text" readonly class="form-control-plaintext" id="evolucao" value="Evolucao Desempenho">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="evolucao1valor1" placeholder="Profissional">
+        </div>
+
+        <div class="form-group mx-sm-1 mb-1">
+            <input type="text" class="form-control" id="evolucao1valor" placeholder="Gestor">
+        </div>
+    </div>	
+
+    <hr class="col-md-11">
+    <h5><b>Avaliacao da Empresa</b></h5>
+    <hr class="col-md-11">
+    
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa1" class="sr-only">Avaliacao 1</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa1" value="Avaliacao 1">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa1">
+        </div>
+    </div> 
+
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa2" class="sr-only">Avaliacao 2</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa2" value="Avaliacao 2">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa2">
+        </div>
+    </div>     
+
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa3" class="sr-only">Avaliacao 3</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa3" value="Avaliacao 3">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa3">
+        </div>
+    </div> 
+
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa4" class="sr-only">Avaliacao 4</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa2" value="Avaliacao 4">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa4">
+        </div>
+    </div> 
+
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa5" class="sr-only">Avaliacao 5</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa2" value="Avaliacao 5">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa5">
+        </div>
+    </div> 
+
+    <div class="row col-md-12">
+        <div class="form-group mb-1">
+            <label for="avaliacaoEmpresa6" class="sr-only">Avaliacao 6</label>
+            <input type="text" readonly class="form-control-plaintext" id="avaliacaoEmpresa6" value="Avaliacao 6">
+        </div>
+        
+        <div class="form-group mx-sm-1 mb-1">	
+            <input type="text" class="form-control" id="avaliacaoEmpresa6">
+        </div>
+    </div>           
+
+    <hr class="col-md-11">
+    
+    <button type="submit" class="btn btn-primary">PROXIMO</button>
+    
+    </form>
+
+
+
+</div>
+
